@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppProducts from './components/AppProducts.vue';
 import AppMainOptions from './components/AppMainOptions.vue';
 import AppFooterLinks from './components/AppFooterLinks.vue';
+import AppFooterBottom from './components/AppFooterBottom.vue';
 
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     AppProducts,
     AppMainOptions,
     AppFooterLinks,
+    AppFooterBottom,
   }
 }
 </script>
@@ -22,6 +24,7 @@ export default {
   </main>
   <footer>
     <AppFooterLinks></AppFooterLinks>
+    <AppFooterBottom></AppFooterBottom>
   </footer>
 </template>
 
