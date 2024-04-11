@@ -51,11 +51,17 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
+    .sign-up {
+        margin-right: 10px;
+    }
     .socials {
         display: flex;
         align-items: center;
         gap: 15px;
+        
+        
 
         .icon-box {
             display: flex;
