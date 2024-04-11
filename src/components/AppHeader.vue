@@ -16,7 +16,7 @@ export default {
                     <a href="#">CHARACTER</a>
                 </li>
                 <li>
-                    <a href="#">COMICS</a>
+                    <a class="active" href="#">COMICS</a>
                 </li>
                 <li>
                     <a href="#">MOVIES</a>
@@ -49,6 +49,9 @@ export default {
 </template>
 
 <style scoped lang="scss">
+/* @use per usare le variabili */
+@use '../style/partials/_variables' as *;
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -56,6 +59,8 @@ export default {
         flex-wrap: wrap;
         padding-top:15px;
         padding-bottom:15px;
+        background-color: $brand-quaternary;
+        border: 1px dashed gray;
 
         .logo {
             width: 20%;
@@ -74,9 +79,14 @@ export default {
                 gap: 20px;
                 font-size: 16px;
                 li {
+                    
                     a {
-                        color: white; 
+                        color:$brand-tertiary; 
+                        &.active {
+                            color:$brand-primary;
+                        }
                     }
+                    
                 } 
                 
             }
