@@ -1,11 +1,13 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppProducts from './components/AppProducts.vue';
+import AppMainOptions from './components/AppMainOptions.vue';
 
 export default {
   components: {
     AppHeader,
     AppProducts,
+    AppMainOptions,
   }
 }
 </script>
@@ -14,6 +16,7 @@ export default {
   <AppHeader></AppHeader>
   <main>
     <AppProducts></AppProducts>
+    <AppMainOptions></AppMainOptions>
   </main>
 </template>
 
