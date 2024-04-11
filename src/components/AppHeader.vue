@@ -5,47 +5,48 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="logo">
-            <img src="../assets/img/dc-logo.png" alt="logo dc">
-        </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/img/dc-logo.png" alt="logo dc">
+            </div>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">CHARACTER</a>
-                </li>
-                <li>
-                    <a class="active" href="#">COMICS</a>
-                </li>
-                <li>
-                    <a href="#">MOVIES</a>
-                </li>
-                <li>
-                    <a href="#">TV</a>
-                </li>
-                <li>
-                    <a href="#">GAMES</a>
-                </li>
-                <li>
-                    <a href="#">CHARACTER</a>
-                </li>
-                <li>
-                    <a href="#">CHARACTER</a>
-                </li>
-                <li>
-                    <a href="#">CHARACTER</a>
-                </li>
-                <li>
-                    <a href="#">CHARACTER</a>
-                </li>
-                <li>
-                    <a href="#">CHARACTER</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">CHARACTER</a>
+                    </li>
+                    <li class="active">
+                        <a class="active" href="#">COMICS</a>
+                    </li>
+                    <li>
+                        <a href="#">MOVIES</a>
+                    </li>
+                    <li>
+                        <a href="#">TV</a>
+                    </li>
+                    <li>
+                        <a href="#">GAMES</a>
+                    </li>
+                    <li>
+                        <a href="#">CHARACTER</a>
+                    </li>
+                    <li>
+                        <a href="#">CHARACTER</a>
+                    </li>
+                    <li>
+                        <a href="#">CHARACTER</a>
+                    </li>
+                    <li>
+                        <a href="#">CHARACTER</a>
+                    </li>
+                    <li>
+                        <a href="#">CHARACTER</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
 </template>
 
 <style scoped lang="scss">
@@ -79,6 +80,11 @@ export default {
                 gap: 20px;
                 font-size: 16px;
                 li {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    &.active {
+                        border-bottom: 3px solid $brand-primary;
+                    }
                     
                     a {
                         color:$brand-tertiary; 
