@@ -8,63 +8,71 @@ export default {
     <section id="footer-map">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <div class="links-box">
-                        <div class="links-title">
-                            DC COMICS
+                <div class="col-50-left">
+                    <div class="col">
+                        <div class="links-box">
+                            <div class="links-title">
+                                DC COMICS
+                            </div>
+                            <ul class="links-list">
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                            </ul>
                         </div>
-                        <ul class="links-list">
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="links-box">
+                            <div class="links-title">
+                                DC COMICS
+                            </div>
+                            <ul class="links-list">
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="links-box">
+                            <div class="links-title">
+                                DC COMICS
+                            </div>
+                            <ul class="links-list">
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                                <li>Character</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="links-box">
+                            <div class="links-title">
+                                SHOPS
+                            </div>
+                            <ul class="links-list">
+                                <li>Character</li>
+                                <li>Character</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="links-box">
-                        <div class="links-title">
-                            DC COMICS
-                        </div>
-                        <ul class="links-list">
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="links-box">
-                        <div class="links-title">
-                            DC COMICS
-                        </div>
-                        <ul class="links-list">
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                            <li>Character</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="links-box">
-                        <div class="links-title">
-                            SHOPS
-                        </div>
-                        <ul class="links-list">
-                            <li>Character</li>
-                            <li>Character</li>
-                        </ul>
+                    
+                <div class="col-50-right">
+                    <div class="big-logo-container">
+                        <img src="../assets/img/dc-logo-bg.png" alt="">
                     </div>
                 </div>
             </div>
@@ -86,13 +94,11 @@ export default {
         margin-left: -10px;
         margin-right: -10px;
         display: flex;
-        flex-wrap: wrap;
         padding-top: 30px;
         padding-bottom: 30px;
 
         .col {
             
-            height: 100%;
             border: 1px dashed white;
             color: $brand-quaternary;
             padding: 0 10px;
@@ -115,12 +121,32 @@ export default {
 
 } 
 
-.left-side {
+.col-50-left {
     width: 50%;
+    display: flex;
+    flex-wrap: wrap;
 }
-.right-side {
+
+.col-50-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 50%;
+    color: white;
+    
+
+    .big-logo-container {
+        margin: -60px 0;
+
+        img {
+            height: 100%;
+           
+        }
+
+    }
+
 }
+
 
 
 </style>
