@@ -134,12 +134,16 @@ export default {
     width: 50%;
     color: white;
     
+    
 
     .big-logo-container {
         margin: -60px 0;
+        
 
         img {
             height: 100%;
+            
+
            
         }
 
