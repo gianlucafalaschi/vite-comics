@@ -1,6 +1,44 @@
 <script>
 export default {
-    name: 'AppMainOptions'
+    name: 'AppMainOptions',
+    data() {
+        return {
+            options: [
+                
+                {   
+                    image: 'buy-comics-digital-comics.png',
+                    text: 'DIGITAL COMICS',
+                    active: false
+                },
+                {   
+                    image: 'buy-comics-merchandise.png',
+                    text: 'DC MERCHANDISE',
+                    active: false
+                },
+                {   
+                    image: 'buy-comics-subscriptions.png',
+                    text: 'SUBSCRIPTION',
+                    active: false
+                },
+                {   
+                    image: 'buy-comics-shop-locator.png',
+                    text: 'COMIC SHOP LOCATOR',
+                    active: false
+                },
+                {   
+                    image: 'buy-dc-power-visa.svg',
+                    text: 'DC POWER VISA',
+                    active: false
+                },
+                
+            ],
+        }
+    },
+    methods: {
+            getImageUrl(name) {
+                return new URL(`../assets/img/${name}`, import.meta.url).href;
+            }
+    }
 }
 </script>
 
@@ -8,51 +46,17 @@ export default {
     <section id="options-section">
         <div class="container">
             <div class="row">
-                <div class="option-box">
+                <div v-for="element in options" class="option-box">
                     <div class="image-container">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                        <img :src="getImageUrl(element.image)">
                     </div>
                     <div class="description">
-                        <div>DIGITAL COMICS</div>
+                        <div>{{ element.text }}</div>
                     </div>
-                </div>
-                <div class="option-box">
-                    <div class="image-container">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                    </div>
-                    <div class="description">
-                        <div>DIGITAL COMICS</div>
-                    </div>
-                </div>
-                <div class="option-box">
-                    <div class="image-container">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                    </div>
-                    <div class="description">
-                        <div>DIGITAL COMICS</div>
-                    </div>
-                </div>
-                <div class="option-box">
-                    <div class="image-container">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                    </div>
-                    <div class="description">
-                        <div>DIGITAL COMICS</div>
-                    </div>
-                </div>
-                <div class="option-box">
-                    <div class="image-container">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                    </div>
-                    <div class="description">
-                        <div>DIGITAL COMICS</div>
-                    </div>
-                </div>
+                </div> 
             </div> 
         </div>
-    </section>
-    
-     
+    </section>  
 </template>
 
 <style scoped lang="scss">
