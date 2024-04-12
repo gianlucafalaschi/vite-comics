@@ -6,7 +6,7 @@
 
 <template>
     <section id="hero">
-        <div class="hero-image-container">ciao</div>
+        <div class="hero-image-container"></div>
     </section>
 </template>
 
