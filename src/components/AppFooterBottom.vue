@@ -1,6 +1,40 @@
 <script>
 export default {
-    name: 'AppFooterBottom'
+    name: 'AppFooterBottom',
+    data() {
+        return {
+            socials: [
+                
+                {   
+                    image: 'footer-facebook.png',
+                    
+                },
+                {   
+                    image: 'footer-twitter.png',
+                    
+                },
+                {   
+                    image: 'footer-youtube.png',
+                    
+                },
+                {   
+                    image: 'footer-pinterest.png',
+                    
+                },
+                {   
+                    image: 'footer-periscope.png',
+                    
+                },
+               
+                
+            ],
+        }
+    },
+    methods: {
+            getImageUrl(name) {
+                return new URL(`../assets/img/${name}`, import.meta.url).href;
+            }
+    }
 }
 </script>
 
@@ -12,7 +46,10 @@ export default {
             </div>
             <div class="socials">
                     <span class="follow">FOLLOW US</span>
-                    <div class="icon-box">
+                    <div v-for="element in socials" class="icon-box">
+                        <img :src="getImageUrl(element.image)" alt="">
+                    </div>
+                    <!-- <div class="icon-box">
                         <img src="../assets/img/footer-facebook.png" alt="">
                     </div>
                     <div class="icon-box">
@@ -23,14 +60,8 @@ export default {
                     </div>
                     <div class="icon-box">
                         <img src="../assets/img/footer-facebook.png" alt="">
-                    </div>
-                    <div class="icon-box">
-                        <img src="../assets/img/footer-facebook.png" alt="">
-                    </div>
+                    </div> -->
             </div>
-            
-            
-
         </div>
     </section>
      
