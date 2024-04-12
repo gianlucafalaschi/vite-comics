@@ -1,6 +1,36 @@
 <script>
 export default {
-    name: 'AppFooterLinks'
+    name: 'AppFooterLinks',
+    data() {
+        return {
+            columns: [
+                
+                {   
+                    title: 'DC COMICS',
+                    link: 'Characters',
+                    
+                },
+                
+                {   
+                    title: 'DC',
+                    link: 'Terms Of Use',
+                },
+                {   
+                    title: 'SITES',
+                    link: 'DC',
+                },
+                {   
+                    title: 'SHOP',
+                    link: 'Shop DC',
+                },
+            ],
+        }
+    },
+    methods: {
+            getImageUrl(name) {
+                return new URL(`../assets/img/${name}`, import.meta.url).href;
+            }
+    }
 }
 </script>
 
@@ -9,23 +39,17 @@ export default {
         <div class="container">
             <div class="row">
                 <div class="col-50-left">
-                    <div class="col">
+                    <div v-for="column in columns" class="col">
                         <div class="links-box">
                             <div class="links-title">
-                                DC COMICS
+                                {{ column.title }}
                             </div>
                             <ul class="links-list">
-                                <li>Character</li>
-                                <li>Character</li>
-                                <li>Character</li>
-                                <li>Character</li>
-                                <li>Character</li>
-                                <li>Character</li>
-                                <li>Character</li>
+                                <li>{{ column.link }}</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col">
+                    <!-- <div class="col">
                         <div class="links-box">
                             <div class="links-title">
                                 DC COMICS
@@ -67,7 +91,7 @@ export default {
                                 <li>Character</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                     
                 <div class="col-50-right">
