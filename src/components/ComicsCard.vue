@@ -1,16 +1,17 @@
 <script>
 export default {
     name: 'ComicsCard',
+    props: ['image', 'title']
 }
 </script>
 
 <template>
     <div class="card">
         <div class="image-container">
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+            <img :src="image" alt="">
         </div>
         <div class="title-container">
-            <h4 class="title">Batman: White Knight Presents: Harley Quinn</h4>
+            <h4 class="title">{{ title }}</h4>
         </div>
     </div>
 </template>
