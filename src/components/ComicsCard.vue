@@ -41,6 +41,7 @@ export default {
         .title {
             font-size: 16px;
             font-weight: normal;
+            word-wrap: break-word;
            
         }
    } 
