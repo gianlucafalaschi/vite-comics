@@ -1,6 +1,11 @@
 <script>
+import ComicsCard from './ComicsCard.vue';
+
 export default {
     name: 'AppProducts',
+    components: {
+        ComicsCard,
+    },
     data() {
         return {
             comics: [
@@ -85,7 +90,23 @@ export default {
 <template>
     <section id="products-section">
         <div class="container">
-            <h3>-->Content goes here<--</h3>
+            <h3>Content goes here<--</h3>
+            <div class="row">
+                <div class="comics-card-box">
+                    <ComicsCard></ComicsCard>
+                    <ComicsCard></ComicsCard>
+                    <ComicsCard></ComicsCard>
+                    <ComicsCard></ComicsCard>
+                    <ComicsCard></ComicsCard>
+                    <ComicsCard></ComicsCard>
+                    <ComicsCard></ComicsCard>
+                    <ComicsCard></ComicsCard>
+                    <ComicsCard></ComicsCard>
+                    <ComicsCard></ComicsCard>
+                    <ComicsCard></ComicsCard>
+                    <ComicsCard></ComicsCard>
+                </div>
+            </div>
         </div>
     </section>
      
@@ -103,9 +124,20 @@ export default {
     .container {
         background-color: transparent;
         padding-top:30px;
-        padding-bottom:30px;
+        padding-bottom:8px;
+
+        .row {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
         
-        h3 {
+        .comics-card-box {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        h3  {
         color: white;
         } 
     }   
