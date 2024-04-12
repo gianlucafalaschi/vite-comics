@@ -10,6 +10,11 @@ export default {
                     links: [
                         'Characters',
                         'Comics',
+                        'Movies',
+                        'TV',
+                        'Games',
+                        'Video',
+                        'News',
                     ],
                       
                 },
@@ -19,6 +24,36 @@ export default {
                         'Terms Of Use',
                         'Privacy Policy(New)',
                         'Add Choiches',
+                        'Advertising',
+                        'Jobs',
+                        'Subscription',
+                        'Talent Workshop',
+                        'CPSC Certificates',
+                        'Ratings',
+                        'Shop Helps',
+                        'Contact Us',
+                    ],
+                      
+                },
+                {   
+                    title: 'SITES',
+                    links: [
+                        'DC',
+                        'MAD Magazine',
+                        'DC Kids',
+                        'DC Universe',
+                        'DC Power Visa',
+                    ],
+                      
+                },
+                {   
+                    title: 'SHOPS',
+                    links: [
+                        'Shop DC',
+                        'Shop DC Collectables',
+                        'DC Kids',
+                        'DC Universe',
+                        'DC Power Visa',
                     ],
                       
                 },
