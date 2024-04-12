@@ -7,21 +7,24 @@ export default {
                 
                 {   
                     title: 'DC COMICS',
-                    link: 'Characters',
-                    
+                    links: [
+                        'Characters',
+                        'Comics',
+                    ],
+                      
                 },
                 
                 {   
                     title: 'DC',
-                    link: 'Terms Of Use',
+                    links: 'Terms Of Use',
                 },
                 {   
                     title: 'SITES',
-                    link: 'DC',
+                    links: 'DC',
                 },
                 {   
                     title: 'SHOP',
-                    link: 'Shop DC',
+                    links: 'Shop DC',
                 },
             ],
         }
@@ -45,7 +48,7 @@ export default {
                                 {{ column.title }}
                             </div>
                             <ul class="links-list">
-                                <li>{{ column.link }}</li>
+                                <li>{{column.links}}</li>
                             </ul>
                         </div>
                     </div>
