@@ -13,19 +13,17 @@ export default {
                     ],
                       
                 },
-                
                 {   
                     title: 'DC',
-                    links: 'Terms Of Use',
+                    links: [
+                        'Terms Of Use',
+                        'Privacy Policy(New)',
+                        'Add Choiches',
+                    ],
+                      
                 },
-                {   
-                    title: 'SITES',
-                    links: 'DC',
-                },
-                {   
-                    title: 'SHOP',
-                    links: 'Shop DC',
-                },
+                
+    
             ],
         }
     },
@@ -47,8 +45,8 @@ export default {
                             <div class="links-title">
                                 {{ column.title }}
                             </div>
-                            <ul class="links-list">
-                                <li>{{column.links}}</li>
+                            <ul v-for="link in column.links" class="links-list">
+                                <li>{{link}}</li>
                             </ul>
                         </div>
                     </div>
