@@ -4,7 +4,6 @@ export default {
     data() {
         return {
             columns: [
-                
                 {   
                     title: 'DC COMICS',
                     links: [
@@ -15,8 +14,7 @@ export default {
                         'Games',
                         'Video',
                         'News',
-                    ],
-                      
+                    ],    
                 },
                 {   
                     title: 'DC',
@@ -32,8 +30,7 @@ export default {
                         'Ratings',
                         'Shop Helps',
                         'Contact Us',
-                    ],
-                      
+                    ],     
                 },
                 {   
                     title: 'SITES',
@@ -43,8 +40,7 @@ export default {
                         'DC Kids',
                         'DC Universe',
                         'DC Power Visa',
-                    ],
-                      
+                    ],    
                 },
                 {   
                     title: 'SHOPS',
@@ -54,11 +50,8 @@ export default {
                         'DC Kids',
                         'DC Universe',
                         'DC Power Visa',
-                    ],
-                      
+                    ],   
                 },
-                
-    
             ],
         }
     },

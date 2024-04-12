@@ -4,6 +4,7 @@ import AppProducts from './components/AppProducts.vue';
 import AppMainOptions from './components/AppMainOptions.vue';
 import AppFooterLinks from './components/AppFooterLinks.vue';
 import AppFooterBottom from './components/AppFooterBottom.vue';
+import AppHero from './components/AppHero.vue';
 
 export default {
   components: {
@@ -12,6 +13,7 @@ export default {
     AppMainOptions,
     AppFooterLinks,
     AppFooterBottom,
+    AppHero
   }
 }
 </script>
@@ -19,6 +21,7 @@ export default {
 <template>
   <AppHeader></AppHeader>
   <main>
+    <AppHero></AppHero>
     <AppProducts></AppProducts>
     <AppMainOptions></AppMainOptions>
   </main>
