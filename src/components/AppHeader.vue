@@ -78,8 +78,8 @@ export default {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        padding-top:15px;
-        padding-bottom:15px;
+        /* padding-top:15px;
+        padding-bottom:15px; */
         background-color: $brand-quaternary;
         border: 1px dashed gray;
 
@@ -100,10 +100,18 @@ export default {
                 gap: 20px;
                 font-size: 16px;
                 li {
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    &.active {
-                        border-bottom: 3px solid $brand-primary;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+
+                    &.active::after {
+                        content: '';
+                        width: 100%;
+                        height: 4px;
+                        background-color:$brand-primary ;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
                     }
                     
                     a {
