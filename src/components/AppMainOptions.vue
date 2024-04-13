@@ -34,7 +34,7 @@ export default {
             ],
         }
     },
-    methods: {
+    methods: {   /* Funzione necessaria per far funzionare le immagini dinamiche con VITE */
             getImageUrl(name) {
                 return new URL(`../assets/img/${name}`, import.meta.url).href;
             }
@@ -86,8 +86,12 @@ export default {
 
 .option-box {
     display: flex;
+    justify-content: center;
     align-items:center;
+    flex-wrap: wrap;
     gap: 15px;
+    object-fit: contain;
+
 
     img {
         max-width: 70px;
