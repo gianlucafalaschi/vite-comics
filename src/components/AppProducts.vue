@@ -134,10 +134,6 @@ export default {
             flex-wrap: wrap;
             margin-bottom: 10px;
         }
-
-        h3  {
-        color: white;
-        } 
     }   
 }
 
@@ -146,13 +142,6 @@ export default {
     display:flex;
     position: absolute;
     top: -21px;
-    
-    
-
-    .series-container {
-    display: flex;
-
-    }
 }
 
 
