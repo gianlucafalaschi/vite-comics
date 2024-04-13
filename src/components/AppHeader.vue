@@ -100,6 +100,7 @@ export default {
                 gap: 20px;
                 font-size: 16px;
                 li {
+                    height: 120px;
                     display: flex;
                     align-items: center;
                     position: relative;
