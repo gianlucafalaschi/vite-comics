@@ -90,13 +90,18 @@ export default {
 <template>
     <section id="products-section">
         <div class="container">
-            <h3>Content goes here<--</h3>
+            <div class="row row-series">
+                <div class="series-container">
+                <div class="badge badge-2">Current series</div>
+            </div>
+            </div>
+            
             <div class="row">
                 <div class="comics-card-box">
                     <ComicsCard v-for="comic in comics" :image="comic.thumb" :title="comic.series"></ComicsCard>
                 </div>
-                <div class="buttons-container">
-                    <div class="badge button button-1">LOAD MORE</div>
+                <div class="badge-container">
+                    <div class="badge badge-1">LOAD MORE</div>
                 </div>
             </div>
         </div>
@@ -117,6 +122,7 @@ export default {
         background-color: transparent;
         padding-top:30px;
         padding-bottom:8px;
+        position: relative;
 
         .row {
             margin-left: -10px;
@@ -135,23 +141,44 @@ export default {
     }   
 }
 
+.row-series {
+    
+    display:flex;
+    position: absolute;
+    top: -21px;
+    
+    
 
-.buttons-container {
+    .series-container {
+    display: flex;
+
+    }
+}
+
+
+.badge-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 5px;
 
+}
 
-    .button-1 {
 
-        padding: 8px;
-        color: white;
-        font-weight: bold;
-        background-color:  $brand-primary; 
-        padding:8px 26px;
-        cursor: pointer;    
-    }
+
+
+.badge-1 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:  $brand-primary;     
+}
+
+.badge-2 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:  $brand-primary;  
 }
 
 </style>
