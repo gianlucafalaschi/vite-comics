@@ -95,6 +95,9 @@ export default {
                 <div class="comics-card-box">
                     <ComicsCard v-for="comic in comics" :image="comic.thumb" :title="comic.series"></ComicsCard>
                 </div>
+                <div class="buttons-container">
+                    <div class="badge button button-1">LOAD MORE</div>
+                </div>
             </div>
         </div>
     </section>
@@ -123,7 +126,7 @@ export default {
         .comics-card-box {
             display: flex;
             flex-wrap: wrap;
-            
+            margin-bottom: 10px;
         }
 
         h3  {
@@ -131,4 +134,24 @@ export default {
         } 
     }   
 }
+
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+
+
+    .button-1 {
+
+        padding: 8px;
+        color: white;
+        font-weight: bold;
+        background-color:  $brand-primary; 
+        padding:8px 26px;
+        cursor: pointer;    
+    }
+}
+
 </style>
