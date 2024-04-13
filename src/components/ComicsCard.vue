@@ -21,7 +21,7 @@ export default {
 @use '../style/partials/_variables' as *;
 
 .card {
-    width: calc((100% / 6));
+    width: calc((100% / 2));
     padding: 10px;
     border: 1px dashed red;
 
@@ -47,6 +47,37 @@ export default {
    } 
 }   
 
+/* MEDIA QUERIES */
 
+/*----------------
+    COLUMNS per XS > 0px
+-----------------*/
+
+
+/*----------------
+    COLUMNS per SM >= 576px
+-----------------*/
+@media screen and (min-width: 576px) {
+
+    .card {
+    width: calc(100% / 4);
+    }
+
+}
+
+/*----------------
+    COLUMNS per MD >= 768px
+-----------------*/
+
+/*----------------
+    COLUMNS per LG >= 992px
+-----------------*/
+@media screen and (min-width: 992px) {
+
+.card {
+width: calc(100% / 6);
+}
+
+}
 
 </style>

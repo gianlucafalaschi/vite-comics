@@ -92,8 +92,8 @@ export default {
         <div class="container">
             <div class="row row-series">
                 <div class="series-container">
-                <div class="badge badge-2">Current series</div>
-            </div>
+                    <div class="badge badge-2">Current series</div>
+                </div>
             </div>
             
             <div class="row">
