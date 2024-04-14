@@ -1,7 +1,10 @@
 <script>
 export default {
     name: 'ComicsCard',
-    props: ['image', 'title']
+    props: {
+        image: String,
+        title: String
+    }
 }
 </script>
 
