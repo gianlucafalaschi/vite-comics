@@ -85,7 +85,6 @@ export default {
         /* padding-top:15px;
         padding-bottom:15px; */
         background-color: $brand-quaternary;
-        border: 1px dashed gray;
 
         .logo {
             width: 20%;

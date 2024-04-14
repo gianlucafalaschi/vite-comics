@@ -23,7 +23,6 @@ export default {
 .card {
     width: calc((100% / 2));
     padding: 10px;
-    border: 1px dashed red;
 
     .image-container {
         width: 100%;
