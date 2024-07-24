@@ -113,6 +113,26 @@ export default {
     padding: 8px;
     color: white;
     border: 1px solid $brand-primary; 
+    margin-bottom: 5px;
 }
+
+
+/* MEDIA QUERIES */
+
+/*----------------
+    COLUMNS per XS > 0px
+-----------------*/
+
+
+/*----------------
+    COLUMNS per SM >= 576px
+-----------------*/
+@media screen and (min-width: 576px) {
+    .button-1 {
+    margin-bottom: 0px;
+    }
+
+}
+
 
 </style>
