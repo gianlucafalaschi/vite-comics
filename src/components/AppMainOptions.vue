@@ -25,11 +25,6 @@ export default {
                     text: 'COMIC SHOP LOCATOR',
                     active: false
                 },
-                {   
-                    image: 'buy-dc-power-visa.svg',
-                    text: 'DC POWER VISA',
-                    active: false
-                },
                 
             ],
         }
@@ -51,7 +46,7 @@ export default {
                         <img :src="getImageUrl(element.image)">
                     </div>
                     <div class="description">
-                        <div>{{ element.text }}</div>
+                        {{ element.text }}
                     </div>
                 </div> 
             </div> 
@@ -76,31 +71,95 @@ export default {
             margin-left: -10px;
             margin-right: -10px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
             gap: 15px;
         }
     }
 }
 
 .option-box {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
     flex-wrap: wrap;
     gap: 15px;
-    object-fit: contain;
 
+    .image-container {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
 
-    img {
-        max-width: 70px;
+        
+        img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        }
+        
     }
 
     .description {
         color: $brand-quaternary;
+        text-align: center;
     }
+    
+
+    
 }
 
+/* MEDIA QUERIES */
 
+/*----------------
+    COLUMNS per XS > 0px
+-----------------*/
+
+
+/*----------------
+    COLUMNS per SM >= 576px
+-----------------*/
+@media screen and (min-width: 576px) {
+    .option-box {
+        width: calc(50% - 15px);
+    }
+
+}
+
+/*----------------
+COLUMNS per MD >= 768px
+-----------------*/
+@media screen and (min-width: 768px) {
+    .option-box {
+        width: calc(25% - 15px);
+    }
+
+}
+
+/*----------------
+COLUMNS per LG >= 992px
+-----------------*/
+@media screen and (min-width: 992px) {
+    
+
+}
+
+/*----------------
+COLUMNS per XL >= 1200px
+-----------------*/
+@media screen and (min-width: 1200px) {
+
+}
+
+/*----------------
+COLUMNS per XXL >= 1400px
+-----------------*/
+@media screen and (min-width: 1400px) {
+
+
+
+}
 </style>
