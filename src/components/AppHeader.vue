@@ -82,28 +82,27 @@ export default {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        /* padding-top:15px;
-        padding-bottom:15px; */
         background-color: $brand-quaternary;
 
         .logo {
             width: 20%;
+            padding:10px 10px 10px 0;
+
             img {
                 max-width: 100px;
             }
         }
 
         nav{
-            width: 80%;
+            width: 65%;
             ul {
                 width: 100%;
                 display: flex;
-                justify-content: flex-end;
                 flex-wrap: wrap;
                 gap: 20px;
                 font-size: 16px;
                 li {
-                    height: 120px;
+                    height: 22px;
                     display: flex;
                     align-items: center;
                     position: relative;
@@ -130,4 +129,33 @@ export default {
             }
         } 
     } 
+
+/* MEDIA QUERIES */
+
+/*----------------
+    COLUMNS per XS > 0px
+-----------------*/
+
+
+/*----------------
+    COLUMNS per SM >= 576px
+-----------------*/
+@media screen and (min-width: 576px) {
+    .container nav {
+        width: 75%;
+    }
+
+}
+
+/*----------------
+COLUMNS per MD >= 768px
+-----------------*/
+@media screen and (min-width: 768px) {
+    .container nav {
+        width: 80%;
+    }
+
+}
+
+
 </style>
