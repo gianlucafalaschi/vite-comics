@@ -29,10 +29,12 @@ export default {
 
     .image-container {
         width: 100%;
+        height: 250px;
 
         img {
             width: 100%;
-            
+            height: 100%;
+            object-fit: cover;
         }
     }
    .title-container {
@@ -62,24 +64,64 @@ export default {
 @media screen and (min-width: 576px) {
 
     .card {
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     }
 
+    .card .image-container {
+        height: 280px ;
+    }
 }
 
 /*----------------
     COLUMNS per MD >= 768px
 -----------------*/
+@media screen and (min-width: 768px) {
+
+    .card {
+    width: calc(100% / 3);
+    }
+
+    .card .image-container {
+        height: 320px ;
+    }
+}
 
 /*----------------
     COLUMNS per LG >= 992px
 -----------------*/
 @media screen and (min-width: 992px) {
 
-.card {
-width: calc(100% / 6);
+    .card {
+    width: calc(100% / 4);
+    }
+
+    .card .image-container {
+        height: 300px ;
+    }
 }
 
+/*----------------
+    COLUMNS per XL >= 1200px
+-----------------*/
+@media screen and (min-width: 1200px) {
+    .card {
+    width: calc(100% / 6);
+    }
+
+    .card .image-container {
+        height: 250px ;
+    }
+}
+
+/*----------------
+    COLUMNS per XXL >= 1400px
+-----------------*/
+@media screen and (min-width: 1400px) {
+
+
+    .card .image-container {
+        height: 300px ;
+    }
 }
 
 </style>
